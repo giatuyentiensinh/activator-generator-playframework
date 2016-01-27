@@ -2,18 +2,18 @@
 	<div class="col s6 m6 l6 offset-s3 offset-m3 offset-l3">
 
 		<div class="center-align">
-			<ul class="collapsible popout" data-collapsible="accordion" watch>
+			<ul class="collapsible popout" data-collapsible="accordion" watch ng-repeat="person in persons">
 			    <li>
 			        <div class="collapsible-header"><i class="mdi-image-filter-drama"></i>firstname</div>
-			        <div class="collapsible-body"><p>{{data.fristname}}</p></div>
+			        <div class="collapsible-body"><p>{{person.fristname}}</p></div>
 			    </li>
 			    <li>
 			        <div class="collapsible-header"><i class="mdi-maps-place"></i>lastname</div>
-			        <div class="collapsible-body"><p>{{data.fristname}}</p></div>
+			        <div class="collapsible-body"><p>{{person.lastname}}</p></div>
 			    </li>
 			    <li>
 			        <div class="collapsible-header"><i class="mdi-social-whatshot"></i>age</div>
-			        <div class="collapsible-body"><p>{{data.fristname}}</p></div>
+			        <div class="collapsible-body"><p>{{person.age}}</p></div>
 			    </li>
 			</ul>
 		</div>
